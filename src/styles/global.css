@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #00ff00;
+  --secondary-color: #ff00ff;
+  --background-color: #0a0a0a;
+  --text-color: #ffffff;
+  --accent-color: #00ffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Share Tech Mono', monospace;
+  overflow-x: hidden;
+}
+
+.glitch-text {
+  position: relative;
+  animation: glitch 1s infinite;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 var(--secondary-color),
+                -0.05em -0.025em 0 var(--accent-color);
+  }
+  14% {
+    text-shadow: 0.05em 0 0 var(--secondary-color),
+                -0.05em -0.025em 0 var(--accent-color);
+  }
+  15% {
+    text-shadow: -0.05em -0.025em 0 var(--secondary-color),
+                0.025em 0.025em 0 var(--accent-color);
+  }
+  49% {
+    text-shadow: -0.05em -0.025em 0 var(--secondary-color),
+                0.025em 0.025em 0 var(--accent-color);
+  }
+  50% {
+    text-shadow: 0.025em 0.05em 0 var(--secondary-color),
+                0.05em 0 0 var(--accent-color);
+  }
+  99% {
+    text-shadow: 0.025em 0.05em 0 var(--secondary-color),
+                0.05em 0 0 var(--accent-color);
+  }
+  100% {
+    text-shadow: -0.025em 0 0 var(--secondary-color),
+                -0.025em -0.025em 0 var(--accent-color);
+  }
+}
+
+.cyber-button {
+  background: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 0.75rem 1.5rem;
+  font-family: 'Share Tech Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+  cursor: pointer;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+  display: block;
+}
+
+@media (min-width: 640px) {
+  .cyber-button {
+    padding: 1rem 2rem;
+    width: auto;
+  }
+}
+
+.cyber-button:hover {
+  background: var(--primary-color);
+  color: var(--background-color);
+  box-shadow: 0 0 20px var(--primary-color);
+}
+
+.cyber-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 255, 0, 0.2),
+    transparent
+  );
+  transition: 0.5s;
+}
+
+.cyber-button:hover::before {
+  left: 100%;
+}
+
+.cyber-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.cyber-card {
+  background: rgba(0, 0, 0, 0.8);
+  border: 1px solid var(--primary-color);
+  padding: 1.25rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 640px) {
+  .cyber-card {
+    padding: 1.5rem;
+  }
+}
+
+.cyber-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px var(--primary-color);
+}
+
+.cyber-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(0, 255, 0, 0.1),
+    transparent
+  );
+  transform: translateX(-100%);
+  transition: 0.5s;
+}
+
+.cyber-card:hover::before {
+  transform: translateX(100%);
+}
