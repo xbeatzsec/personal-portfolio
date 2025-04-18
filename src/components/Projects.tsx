@@ -36,12 +36,13 @@ const projects = [
         }
     },
     {
-        title: 'Bug Bounty',
+        title: 'Bug Bounty & Hacking',
         description: 'Participation in bug bounty programs and live hacking events, including Meta BountyCon in Madrid 2022.',
         technologies: ['Bug Bounty', 'Web Security', 'Penetration Testing'],
         details: {
             achievements: [
                 'Participation in Meta BountyCon Madrid 2022',
+                "Recognized as Young Talent of the Setúbal region in 2022, by 'O Setubalense'",
                 'Vulnerability discovery in bug bounty programs',
                 'Experience in live hacking events'
             ],
@@ -65,28 +66,44 @@ const projects = [
 
 const additionalCertifications = [
     {
-        title: 'Web Security Academy',
-        issuer: 'PortSwigger',
-        date: '2023',
-        description: 'Comprehensive web security training covering OWASP Top 10, advanced exploitation techniques, and modern web vulnerabilities.',
-        technologies: ['Web Security', 'OWASP', 'Burp Suite'],
-        link: 'https://portswigger.net/web-security'
+        title: 'ICS Cybersecurity Specialization',
+        issuer: 'Cybersecurity and Infrastructure Security Agency - United States',
+        date: '2021',
+        description: 'Specialized training in Industrial Control Systems (ICS) cybersecurity, including threats and practical security measures.',
+        technologies: ['ICS Security', 'Industrial Control Systems', 'Critical Infrastructure'],
+        link: '#'
     },
     {
-        title: 'TryHackMe Learning Paths',
-        issuer: 'TryHackMe',
-        date: '2023',
-        description: 'Completed multiple learning paths including Offensive Pentesting, Web Fundamentals, and Red Team Fundamentals.',
-        technologies: ['Penetration Testing', 'Web Security', 'Red Team'],
-        link: 'https://tryhackme.com/p/hernanibento'
+        title: 'Introduction to Vulnerability Management',
+        issuer: 'Security Blue Team',
+        date: '2021',
+        description: 'Comprehensive training in vulnerability management processes, tools, and best practices.',
+        technologies: ['Vulnerability Management', 'Security Assessment', 'Risk Analysis'],
+        link: '#'
     },
     {
-        title: 'HackTheBox Pro Labs',
-        issuer: 'HackTheBox',
-        date: '2023',
-        description: 'Completed advanced penetration testing labs including RastaLabs, Offshore, and Dante.',
-        technologies: ['Penetration Testing', 'Active Directory', 'Privilege Escalation'],
-        link: 'https://app.hackthebox.com/profile/hernanibento'
+        title: 'Certified Network Security Specialist',
+        issuer: 'International CyberSecurity Institute - London, UK',
+        date: '2020',
+        description: 'Comprehensive certification in network security, covering fundamental concepts and practical applications.',
+        technologies: ['Network Security', 'Security Fundamentals', 'Network Defense'],
+        link: 'https://www.credential.net/4d1f3c0b-a30c-44ff-8221-394cfa436736#acc.rum73YLQ'
+    },
+    {
+        title: 'Fundamentals of Ethical Hacking',
+        issuer: 'Udemy - San Francisco, United States',
+        date: '2020',
+        description: 'Comprehensive training in ethical hacking fundamentals, including network security, encryption, VPNs, and attacker techniques.',
+        technologies: ['Ethical Hacking', 'Network Security', 'Encryption', 'VPN'],
+        link: 'https://www.udemy.com/certificate/UC-83a946b2-0c90-4c0a-b002-82399931a464/'
+    },
+    {
+        title: 'NSE 1 & 2 Network Security Associate',
+        issuer: 'Fortinet NSE Institute - California, United States',
+        date: '2020',
+        description: 'Network Security Associate certifications covering fundamental security concepts and Fortinet solutions.',
+        technologies: ['Network Security', 'Fortinet', 'Security Fundamentals'],
+        link: '#'
     }
 ];
 
@@ -97,14 +114,14 @@ const certifications = [
         date: '2023',
         description: 'Burp Suite Certified Practitioner - Advanced web application security certification focusing on practical exploitation techniques, automated testing, and real-world scenarios. Demonstrates expertise in web security testing and vulnerability assessment using Burp Suite Professional.',
         technologies: ['Web Security', 'Burp Suite', 'Penetration Testing'],
-        link: 'https://www.credential.net/your-bscp-cert'
+        link: 'https://portswigger.net/web-security/e/c/c7da38b0b602aeb8'
     },
     {
         title: 'Certified Ethical Hacker Practical (CEH)',
         issuer: 'EC-Council',
         date: '2022',
         description: 'Certified Ethical Hacker - Certification in ethical hacking and offensive security',
-        link: 'https://www.credential.net/your-ceh-cert'
+        link: 'https://aspen.eccouncil.org/VerifyBadge?type=certification&a=Z/B6yUJPY/CQtMYO+2odX1IWgn4wC2ZXQrG689eLlcc='
     }
 ];
 
@@ -339,6 +356,23 @@ const Projects = () => {
                                     </div>
 
                                     <div>
+                                        <h4 className="text-lg font-semibold mb-3 text-primary">Technologies</h4>
+                                        <div className="flex flex-wrap gap-2">
+                                            {projects[selectedProject].technologies.map((tech, i) => (
+                                                <motion.span
+                                                    key={i}
+                                                    initial={{ opacity: 0, scale: 0.8 }}
+                                                    animate={{ opacity: 1, scale: 1 }}
+                                                    transition={{ delay: i * 0.1 }}
+                                                    className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm"
+                                                >
+                                                    {tech}
+                                                </motion.span>
+                                            ))}
+                                        </div>
+                                    </div>
+
+                                    <div>
                                         <h4 className="text-lg font-semibold mb-3 text-primary">Skills</h4>
                                         <div className="flex flex-wrap gap-2">
                                             {projects[selectedProject].details.skills.map((skill, i) => (
@@ -449,24 +483,28 @@ const Projects = () => {
                                             </div>
                                             <p className="text-gray-300 mb-2 text-sm">{cert.issuer}</p>
                                             <p className="text-gray-400 mb-4 text-sm">{cert.description}</p>
-                                            <div className="flex flex-wrap gap-2 mb-4">
-                                                {cert.technologies.map((tech) => (
-                                                    <span
-                                                        key={tech}
-                                                        className="px-2 py-1 bg-primary/10 text-primary rounded-full text-xs"
-                                                    >
-                                                        {tech}
-                                                    </span>
-                                                ))}
-                                            </div>
-                                            <a
-                                                href={cert.link}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="text-primary text-sm hover:text-primary/80 transition-colors"
-                                            >
-                                                View Certificate →
-                                            </a>
+                                            {cert.technologies && cert.technologies.length > 0 && (
+                                                <div className="flex flex-wrap gap-2 mb-4">
+                                                    {cert.technologies.map((tech) => (
+                                                        <span
+                                                            key={tech}
+                                                            className="px-2 py-1 bg-primary/10 text-primary rounded-full text-xs"
+                                                        >
+                                                            {tech}
+                                                        </span>
+                                                    ))}
+                                                </div>
+                                            )}
+                                            {cert.link && cert.link !== '#' && (
+                                                <a
+                                                    href={cert.link}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="text-primary text-sm hover:text-primary/80 transition-colors"
+                                                >
+                                                    View Certificate →
+                                                </a>
+                                            )}
                                         </motion.div>
                                     ))}
                                 </div>
