@@ -1,8 +1,6 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
 
-// Mensagem oculta em hexadecimal
-const hiddenMessage = "4B4F4E414D492D4B414E4F"; // "KONAMI-KANO" em hex
 
 interface Project {
     title: string;
