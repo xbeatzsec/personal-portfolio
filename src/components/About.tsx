@@ -31,7 +31,7 @@ const About = () => {
         >
           I am Hernâni, a 24-year-old Penetration Tester passionate about making a real difference in the world. 
           My journey in cybersecurity is driven by motivation, integrity, respect, and teamwork. 
-          I believe in continuous learning and pushing the boundaries of what's possible in security research.
+          I believe in continuous learning and pushing the boundaries of what's possible in security research and in life.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}

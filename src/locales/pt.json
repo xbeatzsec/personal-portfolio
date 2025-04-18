@@ -1,0 +1,50 @@
+{
+  "navbar": {
+    "home": "Início",
+    "about": "Sobre",
+    "experience": "Experiência",
+    "portfolio": "Portfólio",
+    "contact": "Contacto",
+    "blog": "Blog"
+  },
+  "hero": {
+    "title": "Hacker (Ético) - Engenheiro - Investigador de Segurança",
+    "description": "Explorando as fronteiras da segurança digital e expandindo os limites do que é possível em cibersegurança."
+  },
+  "experience": {
+    "title": "Experiência Profissional",
+    "sibs": {
+      "position": "Engenheiro de Segurança Ofensiva",
+      "description": "Membro da equipa de Segurança Ofensiva, responsável por identificar e explorar vulnerabilidades em sistemas críticos de pagamentos e infraestrutura financeira. Realização de testes de penetração, análise de segurança e recomendações de mitigação.",
+      "achievements": [
+        "Desenvolvimento de ferramentas personalizadas para automação de processos",
+        "Análise e exploração de vulnerabilidades em aplicações web e APIs",
+        "Documentação detalhada de vulnerabilidades e recomendações de mitigação",
+        "Participação em exercícios de Red Team"
+      ]
+    },
+    "siemens": {
+      "position": "Estagiário em Testes de Penetração",
+      "description": "Desenvolvi uma base sólida em hacking ético e segurança de aplicações web através de experiência prática extensiva e participação ativa em desafios Capture the Flag (CTF). Adquiri experiência prática na identificação, análise e mitigação de vulnerabilidades em diversos ambientes, aprimorando tanto as habilidades de resolução de problemas quanto a proficiência em ferramentas e metodologias de cibersegurança.",
+      "achievements": [
+        "Participação ativa em competições CTF e desafios de segurança",
+        "Identificação e exploração de vulnerabilidades em aplicações web",
+        "Desenvolvimento de scripts para automação de testes de segurança",
+        "Análise e documentação de vulnerabilidades em diversos ambientes",
+        "Aplicação de metodologias de teste de penetração em sistemas críticos"
+      ]
+    },
+    "edp": {
+      "position": "Estágio na EDP",
+      "description": "Estágio no departamento de Segurança e Gestão de Risco de TI, com foco em operações de segurança, testes ofensivos e gestão de vulnerabilidades em infraestrutura crítica do setor energético.",
+      "achievements": [
+        "Operações no Security Operations Center (SOC)",
+        "Realização de testes de penetração em sistemas internos",
+        "Gestão e análise de vulnerabilidades em sistemas críticos",
+        "Administração e configuração de firewalls",
+        "Desenvolvimento de scripts e ferramentas de segurança",
+        "Elaboração de relatórios técnicos e recomendações"
+      ]
+    }
+  }
+} 

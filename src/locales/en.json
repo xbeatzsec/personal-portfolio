@@ -1,0 +1,50 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "blog": "Blog"
+  },
+  "hero": {
+    "title": "(Ethical) Hacker - Engineer - Security Researcher",
+    "description": "Exploring the frontiers of digital security and pushing the boundaries of what's possible in cybersecurity."
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "sibs": {
+      "position": "Offensive Security Engineer",
+      "description": "Member of the Offensive Security team, responsible for identifying and exploiting vulnerabilities in critical payment systems and financial infrastructure. Conducting penetration tests, security analysis, and mitigation recommendations.",
+      "achievements": [
+        "Development of custom tools for process automation",
+        "Analysis and exploitation of vulnerabilities in web applications and APIs",
+        "Detailed documentation of vulnerabilities and mitigation recommendations",
+        "Participation in Red Team exercises"
+      ]
+    },
+    "siemens": {
+      "position": "Penetration Tester Trainee",
+      "description": "Developed a solid foundation in ethical hacking and web application security through extensive hands-on experience and active participation in Capture the Flag (CTF) challenges. Gained practical expertise in identifying, analyzing, and mitigating vulnerabilities across diverse environments, enhancing both problem-solving skills and proficiency in cybersecurity tools and methodologies.",
+      "achievements": [
+        "Active participation in CTF competitions and security challenges",
+        "Identification and exploitation of vulnerabilities in web applications",
+        "Development of scripts for security testing automation",
+        "Analysis and documentation of vulnerabilities in various environments",
+        "Application of penetration testing methodologies in critical systems"
+      ]
+    },
+    "edp": {
+      "position": "Internship at EDP",
+      "description": "Internship in the Security and IT Risk Management department, focusing on security operations, offensive testing, and vulnerability management in critical infrastructure of the energy sector.",
+      "achievements": [
+        "Operations in the Security Operations Center (SOC)",
+        "Conducting penetration tests on internal systems",
+        "Management and analysis of vulnerabilities in critical systems",
+        "Firewall administration and configuration",
+        "Development of security scripts and tools",
+        "Preparation of technical reports and recommendations"
+      ]
+    }
+  }
+} 
