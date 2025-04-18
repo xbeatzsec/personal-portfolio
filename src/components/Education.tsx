@@ -2,25 +2,31 @@ import { motion } from 'framer-motion';
 
 const education = [
   {
-    degree: 'Master in Cybersecurity',
-    institution: 'University of Lisbon',
-    date: '2022 - Present',
-    description: 'Focus on offensive security, malware analysis, and reverse engineering',
+    degree: 'Bachelor degree in Computer Science and Engineering',
+    institution: 'Insituto Piaget',
+    date: '2021 - 2023',
+    description: 'Comprehensive program in Computer Science and Engineering, focusing on software development, algorithms, data structures, and system architecture. Emphasis on practical application through hands-on projects and research in software engineering.',
     achievements: [
-      'Development of malware analysis tools',
-      'Research in advanced reverse engineering techniques',
-      'Participation in offensive security projects'
+      'Developed full-stack applications using modern web technologies',
+      'Implemented complex algorithms and data structures for efficient problem-solving',
+      'Led software development projects focusing on clean architecture and best practices',
+      'Participated in programming competitions and hackathons',
+      'Created and maintained robust database systems and APIs',
+      'Ended with a final project in Software Engineering and Security with 18/20'
     ]
   },
   {
-    degree: 'Bachelor in Computer Engineering',
-    institution: 'University of Lisbon',
-    date: '2018 - 2022',
-    description: 'Specialization in information security and networks',
+    degree: 'Associate Degree in Cyber Security, Computer Networks and Information Systems',
+    institution: 'Instituto Piaget',
+    date: '2019 - 2021',
+    description: 'Specialized program in information security and network systems, providing foundational knowledge in cybersecurity principles, network architecture, and system administration with a focus on practical security implementations.',
     achievements: [
-      'Final project in network security',
-      'Participation in CTF competitions',
-      'Development of security tools'
+      'Developed and implemented network security solutions for enterprise environments',
+      'Participated in multiple Capture The Flag (CTF) competitions',
+      'Designed and implemented secure network architectures for various use cases',
+      'Conducted vulnerability assessments and penetration testing exercises',
+      'Learnd about Cryptography, Network Security, and Information Systems',
+      'Ethical Hacking and Cybersecurity Fundamentals'
     ]
   }
 ];
